@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.library.application.PrimaryController">
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="OK" disable="true" mnemonicParsing="false" onAction="#checkRegisterNumberExists" text="OK" textFill="#487e31" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </ButtonBar>
+   </bottom>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <left>
+      <Text fill="#4b4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your register number to proceed" textAlignment="CENTER" wrappingWidth="167.79737854003906" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </left>
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Library Management Student Login" textAlignment="CENTER" wrappingWidth="243.189453125" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </top>
+   <center>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="202.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Text fx:id="statusPrint" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfRegisterNumber" minWidth="-Infinity" onKeyTyped="#validateRegisterNumber" prefHeight="30.0" prefWidth="158.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
